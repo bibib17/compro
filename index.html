@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PSB – Program Spesial Masuk Kedokteran | SMA Luqman Al Hakim</title>
+  <meta name="description" content="Pendaftaran Program Spesial Masuk Kedokteran SMA Luqman Al Hakim. Kurikulum Ulumuddin & Tahfizh, Matriculation, University Success, Foreign Language, dan Scholastic Assessment."/>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brand:#0B3D0B;
+      --brand-dark:#062706;
+      --secondary:#7A865F;
+      --accent:#A8A077;
+      --light-bg:#F2EED1;
+    }
+    body{font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;}
+    .navbar, .daftar{background-color:var(--brand)!important;}
+    .navbar .nav-link, .navbar-brand, .navbar-brand span{color:#fff!important;}
+    .navbar .nav-link:hover{color:var(--accent)!important;}
+    .btn-primary{background-color:var(--brand);border-color:var(--brand);}
+    .btn-primary:hover{background-color:var(--brand-dark);border-color:var(--brand-dark);}
+    .btn-outline-primary{color:var(--brand);border-color:var(--brand);}
+    .btn-outline-primary:hover{background-color:var(--brand);color:#fff;}
+    .hero{
+      background: radial-gradient(1200px 600px at 85% -10%, rgba(122,134,95,.15), transparent),
+                  linear-gradient(180deg, var(--light-bg), #ffffff);
+    }
+    .badge.bg-primary-subtle{
+      background-color:var(--accent)!important;
+      color:#fff!important;
+    }
+    .icon-bullet{height: 30px; text-align: center; padding-top: 2px;}
+    .icon-bullet{background:var(--light-bg);}
+    .icon-bullet svg path, 
+    .icon-bullet svg circle{stroke:var(--brand);}
+    .bg-faint{background:var(--light-bg);}
+    .timeline::before{background:var(--secondary);}
+    .timeline-bullet{background:var(--brand);}
+    .card-feature:hover{transform:translateY(-4px);transition:.25s ease;}
+    .footer-link{color:#cfe2ff;text-decoration:none}
+    .footer-link:hover{color:#fff}
+    .whatsapp-float{position:fixed;right:16px;bottom:16px;z-index:1030}
+    .whatsapp-float .btn{border-radius:999px}
+    .logo-grid img{max-height:56px;opacity:.9}
+    .card-feature:hover{transform:translateY(-4px);transition:.25s ease}
+
+    .accordion-button:not(.collapsed) {
+    background-color: #CADCAE !important;
+    color: #000 !important; /* teks hitam biar kontras */
+    }
+
+    .accordion-button:not(.collapsed)::after {
+    filter: brightness(0); /* panah jadi hitam */
+    }
+    .accordion-button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .accordion-button:not(.collapsed) {
+    background-color: #1C352D !important;
+    color: #fff !important; /* teks putih biar kontras */
+    }
+
+    .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1); /* panah jadi putih */
+    }
+
+    .accordion-button:focus {
+    box-shadow: none !important; /* hilangkan outline biru */
+    border-color: transparent !important;
+    }
+
+    .accordion-button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+
+    #alur .timeline-bullet {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #A8A077; /* aksen bullet */
+    border-radius: 50%;
+    margin-right: 10px;
+    }
+    .timeline{position:relative}
+    .timeline::before{content:"";position:absolute;left:21px;top:0;bottom:0;width:4px;background:#e9ecef;border-radius:2px}
+    .timeline-item{position:relative;padding-left:72px}
+    .timeline-bullet{position:absolute;left:16px;top:.2rem;width:20px;height:20px;border-radius:50%;background:var(--brand)}
+
+
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top border-bottom">
+    <div class="container py-2">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" class="me-2"><path d="M12 2l7 4v6c0 5-7 10-7 10S5 17 5 12V6l7-4z" fill="#F2EED1"/></svg>
+        <span>PSB SMA Luqman Al Hakim</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kurikulum">Kurikulum</a></li>
+          <li class="nav-item"><a class="nav-link" href="#alur">Alur</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+        <div class="ms-lg-3">
+          <a href="#daftar" class="btn btn-primary">Daftar Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero py-5 py-lg-6">
+    <div class="container py-4">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="badge bg-primary-subtle border border-primary-subtle">Pendaftaran Santri</span>
+          <h1 class="display-5 fw-bold mt-3">Special Program Masuk Kedokteran</h1>
+          <p class="lead text-secondary mt-3">Santri unggul dengan landasan ilmu yang kuat dan nilai-nilai Islam yang kokoh. Bersama <strong>SMA Luqman Al Hakim</strong>, bersiap menuju dunia kedokteran melalui program spesial yang berkolaborasi dengan perguruan tinggi ternama.</p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#daftar" class="btn btn-primary btn-lg">Mulai Pendaftaran</a>
+            <a href="#kontak" class="btn btn-outline-primary btn-lg">Tanya Admin</a>
+          </div>
+          <div class="mt-4 small text-secondary">Referensi konten: Halaman resmi PSB – Program Spesial Kedokteran SMA Luqman Al Hakim.</div>
+        </div>
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9 shadow-soft rounded-4 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1623852516990-b92586f7dd5c?q=80&w=1475&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ilustrasi Program Kedokteran" class="w-100 h-100 object-fit-cover"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Partner & Jaminan -->
+  <section class="py-5" id="program">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6 order-lg-2">
+          <div class="logo-grid d-flex gap-4 flex-wrap align-items-center justify-content-lg-end">
+            <img src="https://i.pinimg.com/736x/6a/48/98/6a48986db6bea3c8a3508252f4aaded2.jpg" alt="Ilustrasi PT Mitra"/>
+            <img src="https://i.pinimg.com/736x/34/f9/98/34f9984ac11641d035baef19fedea068.jpg" alt="Ilustrasi PT Mitra 2"/>
+            <img src="https://i.pinimg.com/1200x/df/51/ba/df51bae01cd310b9012c8b65de3c6b2f.jpg" alt="UKM"/>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="fw-bold">Kolaborasi & Jalur Lanjut</h2>
+          <p class="mb-0">Program spesial ini merujuk pada informasi di laman rujukan yang menyebutkan adanya kolaborasi dengan <strong>Universitas Kebangsaan Malaysia (UKM)</strong> dan <strong>Universitas Padjadjaran (UNPAD)</strong> pada skema studi lanjutan/gelar ganda. Detail teknis dapat disesuaikan dengan kebijakan terkini sekolah.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fitur Utama -->
+  <section class="py-5 bg-faint" id="kurikulum">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Apa yang Kamu Dapatkan?</h2>
+        <p class="text-secondary">Rangkuman kurikulum dan pembinaan yang menjadi keunggulan program.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-soft border-0 rounded-4 card-feature">
+            <div class="card-body p-4">
+              <div class="icon-bullet mb-3 rounded-2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 5h16M4 12h16M4 19h16" stroke="#0d6efd" stroke-width="2" stroke-linecap="round"/></svg></div>
+              <h5 class="fw-semibold">Ulumuddin & Tahfizh</h5>
+              <p class="text-secondary mb-0">Pembekalan diniyah dan tahfizh untuk membentuk karakter Islami yang kuat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-soft border-0 rounded-4 card-feature">
+            <div class="card-body p-4">
+              <div class="icon-bullet mb-3 rounded-2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l7 7-7 7-7-7 7-7z" fill="#0d6efd"/></svg></div>
+              <h5 class="fw-semibold">Matriculation Curriculum</h5>
+              <p class="text-secondary mb-0">Penguatan akademik terarah sebagai bekal memasuki perkuliahan kedokteran.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-soft border-0 rounded-4 card-feature">
+            <div class="card-body p-4">
+              <div class="icon-bullet mb-3 rounded-2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#0d6efd" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="#0d6efd" stroke-width="2"/></svg></div>
+              <h5 class="fw-semibold">University Success</h5>
+              <p class="text-secondary mb-0">Pembinaan mindset, kemandirian, dan life-skills agar siap berprestasi di kampus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-soft border-0 rounded-4 card-feature">
+            <div class="card-body p-4">
+              <div class="icon-bullet mb-3 rounded-2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="#0d6efd" stroke-width="2"/></svg></div>
+              <h5 class="fw-semibold">Foreign Language</h5>
+              <p class="text-secondary mb-0">Penguatan bahasa asing untuk kesiapan global: pemahaman literatur, komunikasi, dan presentasi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-soft border-0 rounded-4 card-feature">
+            <div class="card-body p-4">
+              <div class="icon-bullet mb-3 rounded-2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4 10-10" stroke="#0d6efd" stroke-width="2" stroke-linecap="round"/></svg></div>
+              <h5 class="fw-semibold">Scholastic Assessment</h5>
+              <p class="text-secondary mb-0">Latihan dan asesmen akademik komprehensif sebagai persiapan seleksi masuk.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-soft border-0 rounded-4 card-feature">
+            <div class="card-body p-4">
+              <div class="icon-bullet mb-3 rounded-2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h12M4 17h16" stroke="#0d6efd" stroke-width="2" stroke-linecap="round"/></svg></div>
+              <h5 class="fw-semibold">Pembinaan Karakter</h5>
+              <p class="text-secondary mb-0">Program karakter & life-skill untuk membentuk pribadi berakhlak dan tangguh.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alur Pendaftaran -->
+  <section class="py-5" id="alur">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <h2 class="fw-bold">Alur Pendaftaran</h2>
+          <p class="text-secondary">Contoh alur berikut dapat disesuaikan dengan ketentuan sekolah. Silakan konfirmasi ke panitia PSB.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="timeline">
+            <div class="timeline-item mb-4">
+              <span class="timeline-bullet"></span>
+              <h6 class="mb-1">1) Pengisian Formulir</h6>
+              <p class="text-secondary mb-0">Calon santri mengisi data diri melalui formulir online.</p>
+            </div>
+            <div class="timeline-item mb-4">
+              <span class="timeline-bullet"></span>
+              <h6 class="mb-1">2) Verifikasi & Konfirmasi</h6>
+              <p class="text-secondary mb-0">Panitia menghubungi untuk verifikasi dokumen dan jadwal seleksi.</p>
+            </div>
+            <div class="timeline-item mb-4">
+              <span class="timeline-bullet"></span>
+              <h6 class="mb-1">3) Seleksi Akademik & Wawancara</h6>
+              <p class="text-secondary mb-0">Tes akademik dasar dan wawancara orang tua/calon santri.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-bullet"></span>
+              <h6 class="mb-1">4) Pengumuman & Daftar Ulang</h6>
+              <p class="text-secondary mb-0">Pengumuman hasil, dilanjut daftar ulang sesuai ketentuan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA Daftar -->
+  <section class="daftar py-5 bg-primary">
+    <div class="container text-center text-white" id="daftar">
+      <h2 class="fw-bold">Siap Menjadi Dokter Masa Depan?</h2>
+      <p class="lead">Bergabunglah dalam Program Spesial Masuk Kedokteran. Dapatkan pembinaan akademik dan karakter yang terarah.</p>
+      <div class="d-flex gap-2 justify-content-center">
+        <a href="#" class="btn btn-light btn-lg">Isi Formulir Online</a>
+        <a href="https://wa.me/6282283965885" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener">Tanya Admin via WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq py-5" id="faq">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Pertanyaan yang Sering Diajukan</h2>
+        <p class="text-secondary">Info ringkas untuk membantu calon pendaftar.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion" id="faqAcc">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="true">Apa fokus utama program?</button>
+              </h2>
+              <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Fokus pada pembinaan diniyah, tahfizh, dan penguatan akademik sebagai bekal studi kedokteran, merujuk pada poin-poin keunggulan di laman referensi.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">Apakah ada mitra perguruan tinggi?</button>
+              </h2>
+              <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Laman referensi menyebut kolaborasi dengan UKM dan UNPAD. Teknis pendaftaran & jalur lanjut tunduk pada kebijakan sekolah/mitra terbaru.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">Bagaimana cara mendaftar?</button>
+              </h2>
+              <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Klik tombol "Isi Formulir Online" di atas atau hubungi admin melalui WhatsApp untuk panduan lengkap.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="q4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4">Di mana lokasi sekolah?</button>
+              </h2>
+              <div id="a4" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Alamat: Jl. Kejawan Putih Tambak VI/1, Mulyorejo, Surabaya, 60112. Tersedia kontak telepon dan surel pada bagian bawah laman.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak & Lokasi -->
+  <section class="py-5 bg-faint" id="kontak">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h3 class="fw-bold mb-3">Kontak</h3>
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2">📧 smaluqmanalhakimsurabaya@gmail.com</li>
+            <li class="mb-2">☎️ (031) 5932325</li>
+            <li class="mb-2">📱 <a href="https://wa.me/6282283965885" target="_blank" rel="noopener">+62 853-7000-5231 (WhatsApp)</a></li>
+          </ul>
+          <h6 class="fw-semibold">Alamat</h6>
+          <p class="mb-0">Jl. Kejawan Putih Tambak VI/1, Mulyorejo, Surabaya, 60112</p>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="fw-bold mb-3">Tautan Terkait</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="https://hidayatullah.or.id/" target="_blank" rel="noopener">Hidayatullah</a></li>
+            <li class="mb-2"><a href="https://hidayatullahsurabaya.com/" target="_blank" rel="noopener">Hidayatullah Surabaya</a></li>
+            <li class="mb-2"><a href="https://luqmanalhakim.com/" target="_blank" rel="noopener">Luqman al Hakim</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <div class="small">© <span id="year"></span> SMA Integral Luqman Al Hakim Surabaya</div>
+      <div class="d-flex gap-3 small">
+        <a class="footer-link" href="#">Privacy Policy</a>
+        <a class="footer-link" href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/6282283965885" class="btn btn-success btn-lg shadow" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
